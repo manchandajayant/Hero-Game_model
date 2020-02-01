@@ -1,29 +1,71 @@
 <html>
-<head>
-    <meta charset="utf-8">
-    <title>Mocha Tests</title>
+  <head>
+    <meta charset="utf-8" />
+    <title>Galaxy Wars</title>
     <link href="lib/mocha.css" rel="stylesheet" />
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- 👍 YOUR HTML HERE 👍 -->
+    <h1>Switch Kill</h1>
+    <section>
+      <div  id="pic">
+      <img src="https://androidapksfree.com/wp-content/uploads/2018/06/Prince-of-Persia-ShadowFlame-APK.png" alt="">
+      </div>
+      <div id="naam">
+        <div id="input">
+          <form>
+           <label id="" for="name">Give your hero a name</label>
+           <input type="text" name="" id="name">
+          </form>
+           <input type="submit" onclick="submitName()" id="button"></input>
+        </div>
+    </section>
+    
+    <div id="health">
+      <p id="reshealth">RESET YOUR HEALTH</p>
+      <img id="inn" onclick="healthToTen()" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRBe7vZd_fAdaMAkYj3z3vCeJB4mBcYpW_-d4HA4BIgcwHRxt86" alt="" />
+    </div>
 
+    <div>
+      <h3 id="weapons">Weapons Inventory, You can choose one</h3 >
+      <img id="dagger" onclick="dagger()" src="data:image/jpeg;base64,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" alt="" />
+      <img id="sword" onclick="sword()" src="https://www.hellenic-art.com/images/detailed/7/macedonian-sword.jpg" alt="it's a dagger">
+      <img id="bowarrow" onclick="bowArrow()" src="https://cdn.webshopapp.com/shops/2090/files/213633536/x-weta883902766.jpg" alt="">
+    </div>
 
-  <!-- 👍 YOUR HTML HERE 👍 -->
+    <div id="yourstats">
+    <h3>Your Stats</h3>
 
-
-
-  <!-- I RECOMMEND YOU LEAVE THE REST UNTOUCHED -->
-  <button onclick="mocha.checkLeaks(); mocha.run();">Run the tests!</button>
-
-  <div id="mocha">
-  <!-- MOCHA TEST FEEDBACK WILL BE RENDERED HERE -->
+  </div>
+     <div id="stats">
+      <p id="health">Health:</p>
+      <p id="yourweapon">Your Weapon:</p>
   </div>
 
-  <script src="lib/chai.js"></script>
-  <script src="lib/mocha.js"></script>
-  <script src="lib/sinon.js"></script>
-  <script>mocha.setup('bdd')</script>
-  <script src="YOUR_JAVASCRIPT_HERE.js"></script>
-  <script src="lib/game_logic.test.js"></script>
+  
+<p id="hero"></p>
 
-</body>
+    <div>
+      <img src="" id="bag" onclick="firstItemOnInventory()" alt="" />
+    </div>
+    
+    I RECOMMEND YOU LEAVE THE REST UNTOUCHED -->
+     <button onclick="mocha.checkLeaks(); mocha.run();">Run the tests!</button>
+
+    <div id="mocha"> -->
+    MOCHA TEST FEEDBACK WILL BE RENDERED HERE
+     </div>
+
+    <script src="lib/chai.js"></script>
+    <script src="lib/mocha.js"></script>
+    <script src="lib/sinon.js"></script>
+    <script>
+      mocha.setup("bdd");
+    </script>
+    <script src="YOUR_JAVASCRIPT_HERE.js"></script>
+    <script src="lib/game_logic.test.js"></script>
+  </body>
+</html>
+  </body>
 </html>

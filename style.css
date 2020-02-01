@@ -1,0 +1,68 @@
+body {
+  background: rgba(100, 200, 100, 0.4);
+}
+
+h1 {
+  text-align: center;
+  display: block;
+}
+
+q {
+  display: inline;
+}
+
+#weapons {
+  padding-left: 2%;
+}
+
+#input {
+  padding-left: 2%;
+}
+
+#dagger {
+  height: 60px;
+  width: 60px;
+  padding-left: 2%;
+}
+
+#sword {
+  height: 60px;
+  width: 60px;
+  padding-left: 2%;
+}
+
+#bowarrow {
+  height: 60px;
+  width: 60px;
+  padding-left: 2%;
+}
+
+#pic {
+  margin-bottom: 3rem;
+  align-items: center;
+  padding-left: 2%;
+}
+
+#yourstats {
+  display: flex;
+  flex-direction: row;
+  padding-right: 4%;
+  padding-left: 2%;
+  margin-left: 88%;
+}
+
+#stats {
+  margin-left: 88%;
+}
+
+#inn {
+  height: 30px;
+  width: 30px;
+  display: flex;
+  flex-direction: row;
+  margin-left: 95%;
+}
+
+#reshealth {
+  margin-left: 88%;
+}
