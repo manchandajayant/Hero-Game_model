@@ -17,9 +17,14 @@ const wepon = hero.weapon;
 
 function submitName() {
   const inputName = document.getElementById("button");
+  const sectionName = document.getElementById("namedisplay");
   const v = inputName.value;
+  const section = document.createElement("section");
   const p = document.createElement("p");
   p.innerHTML = v;
+  section.classList.add("section");
+  section.appendChild(p);
+  sectionName.appendChild(section);
 }
 
 function healthToTen() {

@@ -7,6 +7,10 @@
   </head>
   <body>
     <!-- 👍 YOUR HTML HERE 👍 -->
+    <div class="namedis" id="namedisplay">
+      <h4>NAME</h4>
+    </div>
+
     <h1>Switch Kill</h1>
     <section>
       <div  id="pic">
@@ -14,13 +18,15 @@
       </div>
       <div id="naam">
         <div id="input">
-          <form>
+          <form onclick="submitName(); return false">
            <label id="" for="name">Give your hero a name</label>
            <input type="text" name="" id="name">
-            <input type="submit" onclick="submitName()" id="button"></input>
+            <input type="submit" id="button"></input>
           </form>
         </div>
     </section>
+
+    
     
     <div id="health">
       <p id="reshealth">RESET YOUR HEALTH</p>
@@ -36,6 +42,7 @@
 
     <div id="yourstats">
     <h3>Your Stats</h3>
+
 
   </div>
      <div id="stats">
