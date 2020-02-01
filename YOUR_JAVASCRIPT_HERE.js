@@ -13,11 +13,13 @@ const hero = {
 
 const person = hero;
 const wepon = hero.weapon;
-console.log(person.weapon);
+//console.log(person.weapon);
 
 function submitName() {
-  const button = document.getElementById("button");
+  const inputName = document.getElementById("button");
+  const v = inputName.value;
   const p = document.createElement("p");
+  p.innerHTML = v;
 }
 
 function healthToTen() {
