@@ -27,16 +27,19 @@ function healthToTen() {
 function dagger() {
   person.inventory.push(person.weapon);
   person.weapon.type = "dagger";
+  document.getElementById("dagger").style.display = "none";
 }
 
 function sword() {
   person.inventory.push(person.weapon);
   person.weapon.type = "sword";
+  document.getElementById("sword").style.display = "none";
 }
 
 function bowArrow() {
   person.inventory.push(person.weapon);
   person.weapon.type = "BowArrow";
+  document.getElementById("BowArrow").style.display = "none";
 }
 
 function rest(person) {
