@@ -24,8 +24,8 @@ function healthToTen() {
   hero.health = 10;
 }
 
-function weapon() {
-  if (dagger()) person.inventory.push(person.weapon);
+function dagger() {
+  person.inventory.push(person.weapon);
   person.weapon.type = "dagger";
 }
 
