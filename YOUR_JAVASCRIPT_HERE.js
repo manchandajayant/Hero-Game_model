@@ -21,7 +21,7 @@ function submitName() {
 }
 
 function healthToTen() {
-  hero.health = 10;
+  person.health = 10;
 }
 
 function dagger() {
@@ -60,10 +60,10 @@ function firstItemOnInventory() {
   person.weapon = hero.inventory[0];
 }
 
-function displayStats() {
-  const inventory = document.getElementById("yourweapon");
-  const health = document.getElementById("health");
+// function displayStats() {
+//   const inventory = document.getElementById("yourweapon");
+//   const health = document.getElementById("health");
 
-  const healthLevel = document.createElement("p");
-  const yourWeapons = document.createElement("p");
-}
+//   const healthLevel = document.createElement("p");
+//   const yourWeapons = document.createElement("p");
+// }
