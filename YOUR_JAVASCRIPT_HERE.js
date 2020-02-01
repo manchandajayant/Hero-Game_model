@@ -22,6 +22,7 @@ function submitName() {
 
 function healthToTen() {
   person.health = 10;
+  document.getElementById("health").innerHTML = "10";
 }
 
 function dagger() {
