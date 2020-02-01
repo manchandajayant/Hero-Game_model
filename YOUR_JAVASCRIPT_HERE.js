@@ -28,18 +28,21 @@ function dagger() {
   person.inventory.push(person.weapon);
   person.weapon.type = "dagger";
   document.getElementById("dagger").style.display = "none";
+  document.getElementById("yourweapon").innerHTML = "Dagger";
 }
 
 function sword() {
   person.inventory.push(person.weapon);
   person.weapon.type = "sword";
   document.getElementById("sword").style.display = "none";
+  document.getElementById("yourweapon").innerHTML = "Sword";
 }
 
 function bowArrow() {
   person.inventory.push(person.weapon);
   person.weapon.type = "BowArrow";
-  document.getElementById("BowArrow").style.display = "none";
+  document.getElementById("bowarrow").style.display = "none";
+  document.getElementById("yourweapon").innerHTML = "BowArrow";
 }
 
 function rest(person) {
@@ -63,10 +66,4 @@ function firstItemOnInventory() {
   person.weapon = hero.inventory[0];
 }
 
-// function displayStats() {
-//   const inventory = document.getElementById("yourweapon");
-//   const health = document.getElementById("health");
-
-//   const healthLevel = document.createElement("p");
-//   const yourWeapons = document.createElement("p");
-// }
+function displayStats() {}
