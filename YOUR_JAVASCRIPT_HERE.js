@@ -60,11 +60,9 @@ function pickUpItem(person, wepon) {
 }
 
 function equipWeapon(person) {
-  person.inventory.unshift(wepon);
+  person.weapon = person.inventory[0];
 }
 
-function firstItemOnInventory() {
-  person.weapon = hero.inventory[0];
-}
-
-function displayStats() {}
+// function firstItemOnInventory() {
+//   person.weapon = hero.inventory[0];
+// }
